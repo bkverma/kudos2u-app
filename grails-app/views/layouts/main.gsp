@@ -17,7 +17,14 @@
 		<g:layoutHead/>
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="https://kudos2u.herokuapp.com/"><asset:image src="kudos_logo.png" alt="Kudos"/></a></div>
+		<div id="grailsLogo" role="banner"><a href="/"><asset:image src="kudos_logo.png" alt="Kudos"/></a>
+		<b> Celebrating Sapient's Extraordinary People </b>
+		</div>
+		<div align="right">
+		<a href="/"><asset:image src="house.png" alt="Home"/>Home</a>
+		<a href="/"><asset:image src="icon-user.png" alt="My Profile"/>My Profile</a>
+		<a href="/"><asset:image src="ICON_LEADERBOARD.png" alt="Leaderboard"/>Leaderboard</a>
+		</div>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>

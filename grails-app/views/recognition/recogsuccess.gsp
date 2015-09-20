@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta name="layout" content="main"/>
+<HTML>
+<HEAD>
+<meta name="layout" content="main"/>
 		<title>Welcome to Kudos</title>
 		<style type="text/css" media="screen">
 			#status {
@@ -79,33 +79,39 @@
 				}
 			}
 		</style>
-	</head>
-	<body>
-		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div id="status" role="complementary">
-			<g:link controller="Register"><h1>Register</h1></g:link>
-			<br>
-			<g:link controller="Recognition"><h1>Recognize Now</h1></g:link>
-			<br>
-			<g:link controller="ListEmployee"><h1>Leadership Board</h1></g:link>
-		</div>
-		
-		<div id="page-body" role="main">
-			<h1 align="center" style="bold">Welcome to Kudos!</h1>
-			
-			<p><b>Let your people recognize each other and celebrate success every day. 
-			With one-click recognition, social features, custom reporting, 
-			and a unified points system that drives daily interaction, 
-			Kudos is the better way to appreciate employees, connect teams and make engagement happen.
-			</b></p>
-			
-			<TABLE>
-			<TR>
-			<TD WIDTH="221" HEIGHT="300" BACKGROUND="${assetPath(src: 'sapient_featured.jpg')}">
-			<CENTER><FONT SIZE="+10" COLOR="white" >Recognition Matters!</FONT></CENTER></TD>
-			</TR>
-			</TABLE>
+<TITLE>Recognition Submitted</TITLE>
+</HEAD>
 
-		</div>
-	</body>
-</html>
+<hr>
+<h1 align="center"> Recognition Page</h1>
+<hr>
+
+<hr>
+<h1 align="center"> Your recognition has been submitted successfully!</h1>
+<hr>
+
+<table border="1">
+		<tr>
+			<td><b>Recognition For</b></td>
+			<td><b>Recognition Level</b></td>
+			<td><b>Core Value</b></td>
+			<td><b>Citation</b></td>
+		</tr>
+		
+	<g:each in="${allRecog}" status="i" var="thisRecog">
+		<tr>
+			<td>${thisRecog.recognitionFor}</td>
+			<td>${thisRecog.recognitionLevel}</td>
+			<td>${thisRecog.coreValue}</td>
+			<td>${thisRecog.citation}</td>
+			
+		</tr>	
+	</g:each>
+
+</table>
+
+<br>
+
+<HR>
+</BODY>
+</HTML>
